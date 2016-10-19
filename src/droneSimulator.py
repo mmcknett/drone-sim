@@ -59,9 +59,10 @@ def plotResult(result):
 	plt.plot(time, angles)
 
 	plt.subplot(212)
-	plt.title("Position over time")
-	plt.plot(time, heights)
-	plt.plot(time, xs)
+	plt.title("Position (y in blue, x in green) over time")
+	plt.plot(time, heights, 'b-')
+	plt.plot(time, xs, 'g-')
+	plt.axis([0, 10, -14, 14])
 	plt.show()
 
 def defaultSimulation():
