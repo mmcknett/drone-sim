@@ -57,7 +57,8 @@ class Drone2d:
 
 	def getAngularAccel(self):
 		""" Angular acceleration due to thrust, assuming that the
-		drone has uniform mass and is a rod of length 2 * cRadius """
+		drone has uniform mass and is a rod of length 2 * cRadius, and
+		assuming that thrust is perpendicular to the rod.  """
 		thrustDiff = self.thrustL - self.thrustR
 		return (3 * thrustDiff) / (self.mass * self.cRadius)
 
