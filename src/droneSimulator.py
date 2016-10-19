@@ -72,7 +72,7 @@ def defaultSimulation():
 	#controller = ConstantThrustController(drone, env)
 	controller = VariableController(drone, env)
 	
-	print "Starting the drone at {0}".format(drone.pos)
+	print("Starting the drone at {0}".format(drone.pos))
 	
 	result = runSimulation(env, drone, controller, 0.1, 10)
 	plotResult(result)
